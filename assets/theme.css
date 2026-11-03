@@ -1,0 +1,27 @@
+:root{color-scheme:dark;--background:#08090b;--foreground:#f5f5f4;--card:#111215;--card-foreground:var(--foreground);--popover:#111215;--popover-foreground:var(--foreground);--primary:#ffd229;--primary-foreground:#08090b;--secondary:#151619;--muted:#191a1e;--muted-foreground:#b7b7bc;--accent:#282313;--accent-foreground:#ffd229;--border:#2c2d32;--input:var(--border);--ring:#ffd229;--grid-line:#15161a;--success:#ffd229;--zalo:#ffd229;--cta-shadow:0 6px 20px #ffd22920;--image-shadow:0 10px 35px #ffd22912}
+body{background:var(--background);color:var(--foreground)}
+.cta-button{background:var(--primary);color:var(--primary-foreground)}
+.cta-button:hover{background:#ffe173}
+.hero-title,.section-title{color:var(--primary)}
+.hero-title span{color:var(--foreground)}
+.faq-answer{padding:0 0 16px;color:var(--muted-foreground);line-height:1.8}
+.faq-list [role=region][hidden]{display:none!important}
+.faq-list button{width:100%}
+.faq-list button[aria-expanded=true] svg{transform:rotate(180deg)}
+dialog.pay-dialog{position:fixed;inset:0;margin:auto;transform:none;padding:24px;border:1px solid var(--border);border-radius:6px;background:var(--background);color:var(--foreground);box-shadow:0 25px 80px #000a;overscroll-behavior:contain}
+dialog.pay-dialog:not([open]){display:none}
+dialog::backdrop{background:#000b}
+.dialog-close{position:absolute;right:12px;top:12px;width:32px;height:32px;display:grid;place-items:center;background:transparent;color:var(--muted-foreground);cursor:pointer;font-size:25px;border-radius:4px}
+.pay-heading h2{font-size:18px;font-weight:600;line-height:1.25;padding-right:20px}
+.pay-heading>p{font-size:14px;color:var(--muted-foreground);margin:6px 0 20px;line-height:1.5}
+.qr-box img{background:#fff;border-color:#fff;object-fit:contain;height:auto}
+.bank-details{font-size:12px;line-height:1.8;text-align:center}
+.bank-details strong{color:var(--foreground)}
+.download-qr{border:1px solid var(--border);border-radius:4px;padding:10px;text-align:center;font-size:12px;font-weight:600;display:block}
+.zalo-button{display:flex;justify-content:center;align-items:center;gap:8px;border-radius:4px;text-align:center;font-size:13px;font-weight:700;padding:12px;color:#08090b}
+.copy-btn{cursor:pointer}
+button:focus-visible,a:focus-visible{outline:2px solid var(--primary);outline-offset:4px}
+.payment-page{padding:30px 16px;max-width:500px;margin:auto}
+.payment-card{border:1px solid var(--border);padding:24px;border-radius:8px;margin-top:20px}
+.back-link{color:var(--primary);font-size:13px}
+@media(max-width:640px){dialog.pay-dialog{padding:20px}.pay-field{gap:8px}.pay-value{font-size:13px}.pay-heading h2{font-size:17px}.copy-btn{padding:0 8px}.site-footer{text-align:center}}
